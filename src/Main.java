@@ -108,25 +108,65 @@ public class Main {
 //
 //        if (a != b); // Trường hợp a không bằng b (phủ định , dấu ! nằm trước dấu = : !=)
 
-        float cannang = 50;
-        float chieucao = 1.7f;
-        float bmi = cannang / (chieucao * chieucao);
+//        float cannang = 50;
+//        float chieucao = 1.7f;
+//        float bmi = cannang / (chieucao * chieucao);
+//
+//        String KetQua = "";
+//        if (bmi < 18.5) {
+//            KetQua = "Gầy";
+//        } else if (bmi <= 24.9) {
+//            KetQua = "Bình thường";
+//        } else if (bmi <= 29.9) {
+//            KetQua = "Hơi Béo";
+//        } else if (bmi <= 34.9) {
+//            KetQua = "Béo phì cấp độ 1";
+//        } else if (bmi <= 39.9) {
+//            KetQua = "Béo phì cấp độ 2";
+//        } else if (bmi > 40) {
+//            KetQua = "Béo phì cấp độ 3";
+//        }
+//        System.out.println("Chỉ số bmi của bạn: " + bmi);
+//        System.out.println(KetQua);
 
-        String KetQua = "";
-        if (bmi < 18.5) {
-            KetQua = "Gầy";
-        } else if (bmi <= 24.9) {
-            KetQua = "Bình thường";
-        } else if (bmi <= 29.9) {
-            KetQua = "Hơi Béo";
-        } else if (bmi <= 34.9) {
-            KetQua = "Béo phì cấp độ 1";
-        } else if (bmi <= 39.9) {
-            KetQua = "Béo phì cấp độ 2";
-        } else if (bmi > 40) {
-            KetQua = "Béo phì cấp độ 3";
-        }
-        System.out.println("Chỉ số bmi của bạn: " + bmi);
-        System.out.println(KetQua);
+        // Bài tập If else Học sinh
+
+        // Một trong 3 môn toán lý hóa trên 8 và không có môn nào dưới 6.5 => Giỏi
+        // Một trong 3 môn toán lý hóa trên 6.5 và không có môn nào dưới 5 => Khá
+        // Một trong 3 môn toán lý hóa trên 5 và không có môn nào dưới 3.5 => Trung bình
+        // Một trong 3 môn toán lý hóa trên 3.5 và không có môn nào dưới 6.5 => Kém
+
+//        float toan = 9;
+//        float ly = 3.5f;
+//        float hoa = 7f;
+//
+//        String KetQua = "";
+//
+//        if (toan >= 8 || ly >= 8 || hoa >= 8 && (toan+ly+hoa >= 6.5)) {
+//            KetQua = "Giỏi";
+//        } else if (toan >= 6.5 || ly >= 6.5 || hoa >= 6.5 && (toan+ly+hoa >= 5)) {
+//            KetQua = "Khá";
+//        } else if (toan >= 5 || ly >= 5 || hoa >= 5 && (toan+ly+hoa >= 3.5)) {
+//            KetQua = "Trung bình";
+//        } else if (toan < 3.5 || ly < 3.5 || hoa < 3.5) {
+//            KetQua = "Kém";
+//        }
+//        System.out.println("Bạn xếp loại: " +KetQua);
+//        System.out.println(KetQua);
+
+        // 5: Câu điều kiện " Switch Case"
+        // Cũng là biểu thức, nhưng khác với kiểu boolean, dùng để kiểm tra các miền giá trị cụ thể
+        // Break dùng cho trường hợp thoát khỏi switch case, vòng lặp.
+//        int month = 5;
+//
+//        switch (month){
+//            case 5:
+//                System.out.println("Quý 1");
+//                break;
+//            case 2:
+//                System.out.println("Quý 2");
+//                break;
+//        }
+
     }
 }
