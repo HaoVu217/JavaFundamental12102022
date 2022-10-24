@@ -1,3 +1,5 @@
+import java.io.PrintStream;
+
 public class Main {
     public static void main(String[] args) {
         // System.out.println("Hello world!");
@@ -169,6 +171,14 @@ public class Main {
 //        default:
 //            System.out.println("Không rơi vào trường hợp trên");
 
+        // 6: Vòng lặp for, > Duyệt dữ liệu để xử lý
+        // tìm kiếm, kiểm tra, sắp xếp.
+        // i: viết tắt chữ index
+        // Có 3 biểu thức trong for là int biểu thức 1,2,3.
+
+        for (int i = 0; i < 10; i++) {
+            System.out.println(i);
+        }
 
     }
 }
