@@ -176,8 +176,52 @@ public class Main {
         // i: viết tắt chữ index
         // Có 3 biểu thức trong for là int biểu thức 1,2,3.
 
-        for (int i = 0; i < 10; i++) {
-            System.out.println(i);
+//        for (int i = 0; i < 10; i++) {
+//            System.out.println(i);
+//        }
+
+        // Bài tập for
+        // Cho vòng lặp chạy từ 1 -> 100
+        // Chỉ in ra số chẵn
+
+        // Cách 1:
+//        for (int i = 0; i <= 100; i += 2) {   // Có thể dùng i = 2 | Biểu thức i += 2 là chia hết cho 2
+//            System.out.println(i);
+//        }
+        // Cách 2:
+
+//        for (int i = 1; i <= 100; i++) {
+//            if (i % 2 == 0) {   // i chia hết cho 2.
+//                System.out.println(i);
+//            }
+//        }
+
+        // Bài tập 2:
+        // Vòng lặp 100 --> 1
+        // In ra số chia hết cho 3.
+
+//        for (int i = 100; i >= 1; i--) {
+//            if (i % 3 == 0) {
+//                System.out.println(i);
+//            }
+//        }
+
+        // Bài tập 3: Harder lol =))
+        // Cho số ngẫu nhiên
+        // Kiểm tra số đó có phải là số nguyên tố hay không
+
+        int number = 7;
+
+        if (number < 2) {
+            System.out.println("Không phải là số nguyên tố");
+        } else {
+            for (int i = 2; i < number; i++) {
+                if (number % i == 0) {
+                    System.out.println("Không phải là số nguyên tố");
+                    return; // Dùng cho việc dừng lại.
+                }
+            }
+            System.out.println("Số " + number + " là số nguyên tố");
         }
 
     }
