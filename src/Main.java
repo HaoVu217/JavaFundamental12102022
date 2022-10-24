@@ -210,18 +210,30 @@ public class Main {
         // Cho số ngẫu nhiên
         // Kiểm tra số đó có phải là số nguyên tố hay không
 
-        int number = 7;
+//        int number = 7;
+//
+//        if (number < 2) {
+//            System.out.println("Không phải là số nguyên tố");
+//        } else {
+//            for (int i = 2; i < number; i++) {
+//                if (number % i == 0) {
+//                    System.out.println("Không phải là số nguyên tố");
+//                    return; // Dùng cho việc dừng lại.
+//                }
+//            }
+//            System.out.println("Số " + number + " là số nguyên tố");
+//        }
 
-        if (number < 2) {
-            System.out.println("Không phải là số nguyên tố");
-        } else {
-            for (int i = 2; i < number; i++) {
-                if (number % i == 0) {
-                    System.out.println("Không phải là số nguyên tố");
-                    return; // Dùng cho việc dừng lại.
-                }
-            }
-            System.out.println("Số " + number + " là số nguyên tố");
+        // 7: Vòng lặp while: Cũng dùng để duyệt.
+        // ex:
+//        0 ~ 1
+//        int numberRandom = Math.random()
+
+        long numberRandom = Math.round((Math.random() * 100) + 1);
+
+        while (numberRandom >= 1) {
+            System.out.println(numberRandom);
+            numberRandom--;
         }
 
     }
