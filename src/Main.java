@@ -229,12 +229,60 @@ public class Main {
 //        0 ~ 1
 //        int numberRandom = Math.random()
 
-        long numberRandom = Math.round((Math.random() * 100) + 1);
+        // dowhile
 
-        while (numberRandom >= 1) {
-            System.out.println(numberRandom);
-            numberRandom--;
-        }
+//        long numberRandom = Math.round((Math.random() * 100) + 1);
+//
+//        while (numberRandom >= 1) {
+//            System.out.println(numberRandom);
+//            numberRandom--;
+//        }
+
+
+        // 8: Hướng đối tượng (Object)
+//        5 nguyên tắc về hướng đối tượng: Solic
+//                1: Singgle resonsibility principle
+//                (tránh cồng kềnh, không nên dồn hết vào 1 nơi.)
+
+//                2: Open/Close principle
+//                (khi nâng cấp, kế thùa và tạo lớp logic mới), mở rộng một class nhưng không sửa đổi bên trong class đó.
+
+//                3: Liskov
+//                (nâng cấp nhưng không được vi phạm tính chất ban đầu của class), ví dụ: manager, staff,...
+
+//                4: Interface Segregation Principle
+//                (tạo một component chung để sử dụng khi các module lặp đi lặp lại nhiều lần.
+
+//                5: Denpendence Inversion Principle
+//                (nên có một trung gian để xử lý, không nên phụ thuộc trực tiếp
+
+         // Object : Đại diện cho một đối tượng cụ thể
+         // Class : Đại diện cho một lớp đối tượng tập thể
+        // viewmodel => design pattern
+
+        // Ex:
+
+        // Kiểu dữ liệu Animal (Object) - new: từ khóa khai báo vùng nhớ, Animal() : phương thức khởi tạo
+        Animal meo = new Animal();
+        meo.name = "Milu";
+        meo.height = "0.1m";
+        meo.weight = "2kg";
+
+        Animal meo1 = new Animal();
+        meo1.name = "Aka";
+        meo1.height = "0.12m";
+        meo1.weight = "3kg";
+
+
+        // Giống về kiểu dữ liệu (Animal), khác nhau về vùng nhớ
+        System.out.println(meo);
+        System.out.println(meo1);
+
+        //uml : đồ thị - biểu đồ để phân tích.
+
+
+
+
 
     }
 }
