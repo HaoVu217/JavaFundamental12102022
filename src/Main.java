@@ -263,26 +263,46 @@ public class Main {
         // Ex:
 
         // Kiểu dữ liệu Animal (Object) - new: từ khóa khai báo vùng nhớ, Animal() : phương thức khởi tạo
-        Animal meo = new Animal();
-        meo.name = "Milu";
-        meo.height = "0.1m";
-        meo.weight = "2kg";
+        Animal meo = new Animal("Milu", "0.1m" , "2kg");
+        Animal meo1 = new Animal( "Aka", "0.12m", "3kg");
 
-        Animal meo1 = new Animal();
-        meo1.name = "Aka";
-        meo1.height = "0.12m";
-        meo1.weight = "3kg";
+        meo1.showInfo();
 
+//        // Giống về kiểu dữ liệu (Animal), khác nhau về vùng nhớ
+//        System.out.println(meo.name);
+//        System.out.println(meo1);
 
-        // Giống về kiểu dữ liệu (Animal), khác nhau về vùng nhớ
-        System.out.println(meo);
-        System.out.println(meo1);
+        //null : không có vùng nhớ, ko tạo ra nơi chứa dữ liệu.
+        // Kiểu nguyên thủy không có giá trị null, không được phép = null , chỉ có kiểu đối tượng (Object) mới được phép = null
+        // null là không có vòng nhớ, còn rỗng là có vùng nhớ nhưng không có giá trị.
 
         //uml : đồ thị - biểu đồ để phân tích.
 
+//        int a = 5;
+//        int b = 10;
+        // Tham trị -> truyền phần giá trị (kiểu nguyên thủy)
+        // Tham chiếu -> truyền vùng nhớ (Kiểu Object - đối tượng)
 
 
+        //Access Modifier (phạm vi đóng gói): Dùng cho việc chỉ định, phạm vi truy cập các biến, lớp, phương thức.
 
+        // Tính đóng gói
+        // Thể hiện việc 1 đô tượng khi có nhiều người sử dụng, không nên cho biết quá nhiều về thuộc tính, nên cung cấp chức năng.
+
+        // Tính kế thừa
+        // Dùng cho việc nâng cấp, ver 1.1 -> ver 1.2, nâng cấp -> sự thay đổi khác nhau. Dựa trên 1 sườn -> nâng cấp thành bản mới. Không nên nâng cấp trên 1 nơi cũ.
+
+        // Tính đa hình
+        // Khi dùng một phương thức, nhưng cách sử dụng khác nhau.
+
+        // Tính trừu tượng
+
+        // Từ khóa:
+        // Public (phạm vi lớn nhất)
+        // Private (phạm vi nhỏ nhất)
+
+        // extends : từ khóa kế thừa. Class kế thừa với class
+        // alt + enter: sửa lỗi.
 
     }
 }
