@@ -296,6 +296,7 @@ public class Main {
         // Khi dùng một phương thức, nhưng cách sử dụng khác nhau.
 
         // Tính trừu tượng
+        //
 
         // Từ khóa:
         // Public (phạm vi lớn nhất)
