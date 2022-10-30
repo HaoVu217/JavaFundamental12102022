@@ -305,5 +305,7 @@ public class Main {
         // extends : từ khóa kế thừa. Class kế thừa với class
         // alt + enter: sửa lỗi.
 
+        PizzaStore pizzaStore = new PizzaStore();
+        pizzaStore.orderPizza(new PizzaCheese());
     }
 }
